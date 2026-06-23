@@ -23,18 +23,18 @@
   --color-border-light: rgba(255, 255, 255, 0.15);
   --color-border-faq: rgba(228, 228, 231, 0.8);
 
-  /* Layout — Figma frame 1440px, content 1280px (80px gutters) */
+  /* Layout — Figma frame 1440px, content 1280px; scale fluidly below 1440 */
   --frame-width: 1440px;
   --site-max-width: 1280px;
-  --site-gutter: 1.25rem;
+  --site-gutter: clamp(1.25rem, 0.5rem + 3.5vw, 5rem);
   --site-gutter-sm: 1.5rem;
   --container-max: 1280px;
   --container-narrow: 760px;
   --container-form: 500px;
   --content-wide: 1120px;
   --content-medium: 960px;
-  --section-py: 3rem;
-  --section-py-lg: 5rem;
+  --section-py: clamp(2.5rem, 2rem + 1.5vw, 3rem);
+  --section-py-lg: clamp(3rem, 2rem + 2.5vw, 5rem);
 
   /* Spacing scale */
   --space-1: 0.25rem;
@@ -57,14 +57,15 @@
   --text-md: 1rem;
   --text-lg: 1.0625rem;
   --text-xl: 1.125rem;
-  --heading-hero: clamp(1.65rem, 6vw, 2.15rem);
-  --heading-hero-lg: clamp(1.85rem, 3.8vw, 3.35rem);
-  --heading-section: 2.5rem;
-  --heading-section-responsive: clamp(1.75rem, 4.5vw, 2.5rem);
-  --heading-section-sm: clamp(1.2rem, 4vw, 2.35rem);
-  --heading-page: clamp(1.5rem, 4.8vw, 2.65rem);
-  --lead-size: 1rem;
-  --lead-size-lg: 1.125rem;
+  --heading-hero: clamp(1.65rem, 1rem + 2.2vw, 2.75rem);
+  --heading-hero-lg: clamp(1.85rem, 0.75rem + 2.4vw, 3.35rem);
+  --heading-hero-home: clamp(1.85rem, 0.75rem + 2.4vw, 3.35rem);
+  --heading-section: clamp(1.75rem, 0.625rem + 2.08vw, 2.5rem);
+  --heading-section-responsive: var(--heading-section);
+  --heading-section-sm: clamp(1.2rem, 0.9rem + 1.5vw, 2rem);
+  --heading-page: clamp(1.5rem, 0.875rem + 2vw, 2.65rem);
+  --lead-size: clamp(0.9375rem, 0.875rem + 0.25vw, 1rem);
+  --lead-size-lg: clamp(1rem, 0.9375rem + 0.35vw, 1.125rem);
 
   /* Radii */
   --radius-sm: 0.5rem;
@@ -104,14 +105,7 @@
 
 @media (min-width: 640px) {
   :root {
-    --site-gutter: 1.5rem;
     --logo-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --site-gutter: 5rem;
   }
 }
 
@@ -274,15 +268,24 @@
 
 .heading-display {
   font-family: var(--font-montserrat), var(--font-work-sans), Arial, sans-serif;
-  font-size: var(--heading-section-responsive);
+  font-size: var(--heading-section);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0;
 }
 
-@media (min-width: 1024px) {
-  .heading-display {
-    font-size: var(--heading-section);
+.heading-hero-home {
+  font-family: var(--font-montserrat), var(--font-work-sans), Arial, sans-serif;
+  font-size: var(--heading-hero-home);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+@media (min-width: 640px) {
+  .heading-hero-home {
+    line-height: 0.98;
   }
 }
 
@@ -318,17 +321,11 @@
 
 .heading-section {
   font-family: var(--font-montserrat), var(--font-work-sans), Arial, sans-serif;
-  font-size: var(--heading-section-responsive);
+  font-size: var(--heading-section);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0;
   color: var(--color-text);
-}
-
-@media (min-width: 1024px) {
-  .heading-section {
-    font-size: var(--heading-section);
-  }
 }
 
 .heading-section--center {
@@ -880,10 +877,10 @@
   .hero__content {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: minmax(0, 520px) 420px;
+    grid-template-columns: minmax(0, 1fr) minmax(17.5rem, 26.25rem);
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-8);
+    gap: clamp(1.5rem, 1rem + 1.5vw, 2rem);
     padding-bottom: var(--space-10);
     padding-top: 6.5rem;
   }
@@ -953,7 +950,7 @@
 }
 
 .stats-cell__value {
-  font-size: clamp(1.05rem, 3.4vw, 1.35rem);
+  font-size: clamp(1.05rem, 0.875rem + 0.75vw, 1.35rem);
   font-weight: 700;
   line-height: 1;
   color: var(--color-text);
