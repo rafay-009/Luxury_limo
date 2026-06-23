@@ -71,7 +71,7 @@ function StatCell({
       }
     >
       <stat.icon className="h-5 w-5 text-white" strokeWidth={1.6} aria-hidden />
-      <p className="mt-2.5 text-[clamp(1.25rem,2.2vw,1.65rem)] font-bold leading-none text-white">
+      <p className="mt-2.5 text-[clamp(1.25rem,1rem+0.75vw,1.65rem)] font-bold leading-none text-white">
         <AnimatedStat value={stat.value} />
       </p>
       <p className="mt-1.5 text-[11px] font-normal text-zinc-500 sm:text-[12px]">{stat.label}</p>
@@ -106,7 +106,7 @@ function AnimatedStat({ value }: { value: string }) {
 function WorldMapBackground() {
   return (
     <div
-      className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.14] lg:opacity-[0.11]"
+      className="pointer-events-none absolute inset-x-0 bottom-0 opacity-[0.14] lg:opacity-[0.11]"
       aria-hidden
     >
       <Image
@@ -114,8 +114,8 @@ function WorldMapBackground() {
         alt=""
         width={1360}
         height={301}
-        className="h-auto w-[min(110%,900px)] max-h-[55%] object-contain object-center"
-        sizes="900px"
+        className="block h-auto w-full"
+        sizes="100vw"
         priority={false}
       />
     </div>

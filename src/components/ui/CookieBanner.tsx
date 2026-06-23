@@ -23,8 +23,8 @@ export function CookieBanner() {
   }
 
   return (
-    <div className="glass glass-hover fixed bottom-5 left-5 z-50 max-w-sm p-4 text-sm text-slate-200">
-      <p>{config.message}</p>
+    <div className="floating-action fixed bottom-5 left-5 z-[100] max-w-sm rounded-2xl p-4 text-sm text-white shadow-2xl">
+      <p className="font-normal leading-relaxed text-white">{config.message}</p>
       <div className="mt-4 flex gap-2">
         <button
           className="cyan-cta focus-ring rounded-lg bg-cyan-300 px-4 py-2 font-bold text-slate-950"
@@ -34,7 +34,7 @@ export function CookieBanner() {
           {config.acceptLabel}
         </button>
         <button
-          className="focus-ring rounded-lg border border-white/10 px-4 py-2 font-normal text-white"
+          className="focus-ring rounded-lg border border-white/25 bg-white/5 px-4 py-2 font-normal text-white transition hover:border-white/40 hover:bg-white/10"
           onClick={() => choose("declined")}
           type="button"
         >

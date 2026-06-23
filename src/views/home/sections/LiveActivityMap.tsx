@@ -130,7 +130,7 @@ export function LiveActivityMap() {
               style={{ boxShadow: "0 0 0 2px rgba(16,185,129,0.35), 0 0 10px rgba(16,185,129,0.65)" }}
             />
           </span>
-          <p className="text-[clamp(1.5rem,6vw,2.25rem)] font-bold leading-none text-white">{activeRides}</p>
+          <p className="text-[clamp(1.5rem,1rem+1.75vw,2.25rem)] font-bold leading-none text-white">{activeRides}</p>
         </div>
         <p className="mt-1 text-[10px] font-normal text-white/85 sm:mt-1.5 sm:text-[12px]">rides active right now</p>
       </motion.div>
