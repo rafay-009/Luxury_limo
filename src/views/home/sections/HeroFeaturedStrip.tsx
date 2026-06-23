@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { heroFeatured, heroFeaturedMobile } from "@/pages/home/assets";
+import { heroFeatured, heroFeaturedMobile } from "@/page-modules/home/assets";
 
 export function HeroFeaturedStrip() {
   return (

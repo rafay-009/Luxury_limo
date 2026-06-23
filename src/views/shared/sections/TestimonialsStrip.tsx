@@ -5,7 +5,7 @@ import type { StaticImageData } from "next/image";
 import { useMemo, useState } from "react";
 import { Star } from "lucide-react";
 import { useReducedMotion } from "framer-motion";
-import { accreditedBadge, googleLogo, trustpilotLogo } from "@/pages/shared/assets";
+import { accreditedBadge, googleLogo, trustpilotLogo } from "@/page-modules/shared/assets";
 import { REVIEW_TABS, SITE_CONFIG, type ReviewFilter } from "@/constants";
 import type { Testimonial } from "@/types";
 import { cn } from "@/lib/utils";

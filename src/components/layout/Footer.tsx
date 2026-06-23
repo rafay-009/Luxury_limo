@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Facebook, Instagram, Linkedin, Mail, MessageCircle, Phone, Quote, Twitter } from "lucide-react";
-import { complianceIcons, logo } from "@/pages/shared/assets";
+import { complianceIcons, logo } from "@/page-modules/shared/assets";
 import { FOOTER_AGENT_COLORS, FOOTER_COLUMNS, SITE_CONFIG } from "@/constants";
 import { cn } from "@/lib/utils";
 

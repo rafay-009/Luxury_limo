@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
-import { tripDetailsMockup } from "@/pages/home/assets";
+import { tripDetailsMockup } from "@/page-modules/home/assets";
 import { SITE_CONFIG } from "@/constants";
 import { cn } from "@/lib/utils";
 

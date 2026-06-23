@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { chauffeurImage } from "@/pages/home/assets";
+import { chauffeurImage } from "@/page-modules/home/assets";
 import { Play } from "lucide-react";
 import {
   PROFESSIONAL_CHAUFFEUR_FEATURES,

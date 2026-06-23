@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { needImage } from "@/pages/newyork/assets";
+import { needImage } from "@/page-modules/newyork/assets";
 
 export function NewYorkBookingHelpSection() {
   return (

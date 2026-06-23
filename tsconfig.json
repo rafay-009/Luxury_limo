@@ -25,21 +25,6 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-      "@/pages/home": [
-        "./src/page-modules/home/_index.ts"
-      ],
-      "@/pages/home/assets": [
-        "./src/page-modules/home/_assets.ts"
-      ],
-      "@/pages/newyork": [
-        "./src/page-modules/newyork/_index.ts"
-      ],
-      "@/pages/newyork/assets": [
-        "./src/page-modules/newyork/_assets.ts"
-      ],
-      "@/pages/shared/assets": [
-        "./src/page-modules/shared/_assets.ts"
       ]
     }
   },

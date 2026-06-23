@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Car, Clock, Headphones, MapPin, Star, TrendingUp } from "lucide-react";
-import { worldMapVector } from "@/pages/home/assets";
+import { worldMapVector } from "@/page-modules/home/assets";
 import { GLOBAL_PRESENCE_DESKTOP_STATS, GLOBAL_PRESENCE_MOBILE_STATS } from "@/constants";
 import { parseCountTarget } from "@/lib/utils";
 

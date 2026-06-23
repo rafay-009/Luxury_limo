@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { featuredBelow, featuredBelowMobile } from "@/pages/home/assets";
+import { featuredBelow, featuredBelowMobile } from "@/page-modules/home/assets";
 
 export function FeaturedRecognition() {
   return (

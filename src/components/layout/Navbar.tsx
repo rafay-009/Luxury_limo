@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
-import { footbalIcon, logo } from "@/pages/shared/assets";
+import { footbalIcon, logo } from "@/page-modules/shared/assets";
 import { AudienceBar } from "@/components/layout/AudienceBar";
 import { NAV_DESKTOP_LINKS, SITE_CONFIG } from "@/constants";
 import { cn } from "@/lib/utils";

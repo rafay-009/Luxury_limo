@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { airportImage, airportStatusCard } from "@/pages/newyork/assets";
+import { airportImage, airportStatusCard } from "@/page-modules/newyork/assets";
 import { NEW_YORK_AIRPORT_FEATURES } from "@/constants";
 
 export function NewYorkAirportTransferSection() {

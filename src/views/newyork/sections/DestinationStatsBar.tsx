@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
-import { worldMapDesktop } from "@/pages/newyork/assets";
+import { worldMapDesktop } from "@/page-modules/newyork/assets";
 import { DESTINATION_STATS } from "@/constants";
 import { parseCountTarget } from "@/lib/utils";
 

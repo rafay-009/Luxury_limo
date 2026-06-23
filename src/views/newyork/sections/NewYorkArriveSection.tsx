@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { arriveImage, arriveStatusCard } from "@/pages/newyork/assets";
+import { arriveImage, arriveStatusCard } from "@/page-modules/newyork/assets";
 import { NEW_YORK_ARRIVE_FEATURES } from "@/constants";
 
 export function NewYorkArriveSection() {

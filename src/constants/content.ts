@@ -31,9 +31,9 @@ import {
   gdprLogo,
   vancouverIcon,
   ws520Icon,
-} from "@/pages/home/assets";
-import { popu1, popu2, popu3, popu4 } from "@/pages/newyork/assets";
-import { googleLogo, trustpilotLogo } from "@/pages/shared/assets";
+} from "@/page-modules/home/assets";
+import { popu1, popu2, popu3, popu4 } from "@/page-modules/newyork/assets";
+import { googleLogo, trustpilotLogo } from "@/page-modules/shared/assets";
 
 /* -------------------------------------------------------------------------- */
 /* Layout                                                                     */

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { CheckSquare, Shield, Users } from "lucide-react";
-import { heroBg } from "@/pages/home/assets";
+import { heroBg } from "@/page-modules/home/assets";
 import { HERO_COUNTRIES, HERO_PROOF, SITE_CONFIG } from "@/constants";
 import { BookingWidget } from "@/views/shared/sections/BookingWidget";
 import { Icon } from "@/components/ui/Icon";

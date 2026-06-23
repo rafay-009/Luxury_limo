@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { heroImage, worldMapMobile } from "@/pages/newyork/assets";
+import { heroImage, worldMapMobile } from "@/page-modules/newyork/assets";
 import { BookingWidget } from "@/views/shared/sections/BookingWidget";
 import { DestinationStatsBar } from "@/views/newyork/sections/DestinationStatsBar";
 import { fadeInVariant, fadeUpVariant, staggerContainer } from "@/lib/animations";

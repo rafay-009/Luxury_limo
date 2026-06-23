@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NewYorkPage } from "@/pages/newyork";
+import { NewYorkPage } from "@/page-modules/newyork";
 
 export const metadata: Metadata = {
   title: "Premium Chauffeur Service in New York",
