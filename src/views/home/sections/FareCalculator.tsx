@@ -102,7 +102,7 @@ function EstimateWatermark({ estimate }: { estimate: number }) {
     >
       <div className="translate-x-[-18%] translate-y-[-6%] blur-[2px] opacity-40">
         <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/80">Estimated fare</p>
-        <p className="mt-3 text-[3.25rem] font-normal leading-none text-white/90">${estimate}</p>
+        <p className="mt-3 text-[clamp(2rem,1.25rem+2.5vw,3.25rem)] font-normal leading-none text-white/90">${estimate}</p>
         <ul className="mt-6 space-y-3 text-[15px] font-normal text-white/70">
           <li className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400/60" />

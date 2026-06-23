@@ -63,7 +63,7 @@ function FooterCtaButtons() {
           WhatsApp
         </a>
         <a
-          className="glass glass-hover focus-ring flex h-11 items-center justify-center gap-2 text-[13px] font-normal text-zinc-300 transition hover:border-cyan-300 hover:text-cyan-300"
+          className="glass glass-hover focus-ring flex h-11 items-center justify-center gap-2 text-[13px] font-normal text-white transition hover:border-cyan-300 hover:text-white"
           href={phoneHref}
         >
           <Phone className="h-4 w-4" aria-hidden />
@@ -123,7 +123,7 @@ export function Footer() {
           <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1fr_420px] lg:items-center lg:gap-10">
             <div>
               <FooterAgentsBadge />
-              <h2 className="mt-5 max-w-[380px] text-[clamp(1.45rem,5vw,2rem)] font-bold leading-[1.15]">
+              <h2 className="mt-5 max-w-[380px] text-[clamp(1.45rem,1rem+1.5vw,2rem)] font-bold leading-[1.15]">
                 Get your ride
                 <span className="block">confirmed in minutes</span>
               </h2>
