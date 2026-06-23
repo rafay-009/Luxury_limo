@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { LIVE_ACTIVITY_MARKERS } from "@/constants";
+import { LIVE_ACTIVITY_MARKERS, type LiveActivityMarker } from "@/constants";
 
 type MapDot = { x: number; y: number };
 
@@ -63,7 +63,7 @@ function buildWorldDots(): MapDot[] {
   return dots;
 }
 
-function ActiveMarkerDot({ marker }: { marker: ActiveMarker }) {
+function ActiveMarkerDot({ marker }: { marker: LiveActivityMarker }) {
   return (
     <g>
       <motion.circle

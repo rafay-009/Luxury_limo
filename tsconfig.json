@@ -27,19 +27,19 @@
         "./src/*"
       ],
       "@/pages/home": [
-        "./src/pages/home/_index.ts"
+        "./src/page-modules/home/_index.ts"
       ],
       "@/pages/home/assets": [
-        "./src/pages/home/_assets.ts"
+        "./src/page-modules/home/_assets.ts"
       ],
       "@/pages/newyork": [
-        "./src/pages/newyork/_index.ts"
+        "./src/page-modules/newyork/_index.ts"
       ],
       "@/pages/newyork/assets": [
-        "./src/pages/newyork/_assets.ts"
+        "./src/page-modules/newyork/_assets.ts"
       ],
       "@/pages/shared/assets": [
-        "./src/pages/shared/_assets.ts"
+        "./src/page-modules/shared/_assets.ts"
       ]
     }
   },

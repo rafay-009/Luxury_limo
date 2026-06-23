@@ -30,7 +30,7 @@ export function FAQAccordion({ faqs, defaultOpenIndex = -1 }: FAQAccordionProps)
             transition={
               reduceMotion
                 ? { duration: 0 }
-                : { layout: { duration: 0.32, FAQ_ANIMATION_EASE } }
+                : { layout: { duration: 0.32, ease: FAQ_ANIMATION_EASE } }
             }
             className={cn("faq-item", isOpen ? "faq-item--open" : "faq-item--closed")}
           >
@@ -44,7 +44,7 @@ export function FAQAccordion({ faqs, defaultOpenIndex = -1 }: FAQAccordionProps)
               <motion.span
                 initial={false}
                 animate={{ rotate: isOpen ? 180 : 0 }}
-                transition={reduceMotion ? { duration: 0 } : { duration: 0.25, FAQ_ANIMATION_EASE }}
+                transition={reduceMotion ? { duration: 0 } : { duration: 0.25, ease: FAQ_ANIMATION_EASE }}
                 aria-hidden
               >
                 {isOpen ? (
@@ -62,7 +62,7 @@ export function FAQAccordion({ faqs, defaultOpenIndex = -1 }: FAQAccordionProps)
                   initial={reduceMotion ? false : { height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={reduceMotion ? undefined : { height: 0, opacity: 0 }}
-                  transition={reduceMotion ? { duration: 0 } : { duration: 0.32, FAQ_ANIMATION_EASE }}
+                  transition={reduceMotion ? { duration: 0 } : { duration: 0.32, ease: FAQ_ANIMATION_EASE }}
                   className="faq-item__answer-wrap"
                 >
                   <p className="faq-item__answer">{faq.answer}</p>
