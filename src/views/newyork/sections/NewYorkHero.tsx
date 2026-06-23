@@ -47,7 +47,7 @@ export function NewYorkHero() {
         >
           <motion.h1
             variants={fadeUpVariant}
-            className="text-[clamp(1.65rem,5.5vw,3.1rem)] font-bold leading-[1.08] tracking-[-0.01em] text-white"
+            className="heading-hero-home tracking-[-0.01em] text-white"
           >
             Premium Chauffeur Service In{" "}
             <span className="text-[#12b8d0]">New York</span>

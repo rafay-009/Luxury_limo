@@ -12,13 +12,13 @@ export function PhoneFAB() {
     <motion.a
       href={`tel:${fab.number}`}
       aria-label={fab.label}
-      className="glass glass-hover fixed bottom-5 right-5 z-50 hidden h-14 items-center gap-3 overflow-hidden rounded-full px-4 text-sm font-bold text-white shadow-cyan-500/20 transition-all hover:w-36 lg:flex"
+      className="floating-action fixed bottom-5 right-5 z-[100] hidden h-14 items-center gap-3 overflow-hidden rounded-full px-4 text-sm font-bold !text-white shadow-2xl transition-all hover:w-36 lg:flex"
       initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", delay: 2, stiffness: 160, damping: 18 }}
     >
       <Phone className="h-5 w-5 shrink-0 text-cyan-300" aria-hidden />
-      <span className="whitespace-nowrap">{fab.label}</span>
+      <span className="whitespace-nowrap !text-white">{fab.label}</span>
     </motion.a>
   );
 }
