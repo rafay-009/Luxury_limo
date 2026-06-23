@@ -33,7 +33,7 @@ export function HeroSection() {
           initial={reduceMotion ? false : "hidden"}
           animate="visible"
           variants={staggerContainer}
-          className="w-full max-w-[520px] text-center lg:-translate-x-2 lg:text-left"
+          className="w-full max-w-[520px] text-center lg:max-w-none lg:-translate-x-2 lg:text-left"
         >
           <motion.div
             variants={fadeUpVariant}
@@ -60,7 +60,7 @@ export function HeroSection() {
 
           <motion.h1
             variants={fadeUpVariant}
-            className="mx-auto text-[clamp(1.85rem,7vw,2.5rem)] font-bold leading-[1.05] text-white sm:text-[clamp(2rem,4.55vw,4.45rem)] sm:leading-[0.98] lg:max-w-none"
+            className="heading-hero-home mx-auto text-white lg:max-w-none"
           >
             <span className="block lg:whitespace-nowrap">
               <span className="text-cyan-400">Premium</span>
@@ -75,19 +75,26 @@ export function HeroSection() {
 
           <motion.p
             variants={fadeUpVariant}
-            className="mx-auto mt-4 max-w-[340px] text-[14px] font-normal leading-[1.55] text-slate-200 sm:mt-6 sm:max-w-[660px] sm:text-[21px] sm:leading-[1.45] sm:text-slate-100 lg:mx-0"
+            className="mx-auto mt-4 max-w-[340px] text-[clamp(0.875rem,0.8rem+0.35vw,1.3125rem)] font-normal leading-[1.55] text-slate-200 sm:mt-6 sm:max-w-[660px] sm:leading-[1.45] sm:text-slate-100 lg:mx-0"
           >
             {hero.subheadline}
           </motion.p>
 
-          <motion.div variants={fadeUpVariant} className="mt-10 hidden flex-wrap gap-3 lg:flex">
+          <motion.div variants={fadeUpVariant} className="mt-10 hidden flex-nowrap items-center gap-2 lg:flex">
             {HERO_COUNTRIES.map((country) => (
               <span
                 key={country.label}
-                className="inline-flex h-10 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[15px] font-normal text-white shadow-xl backdrop-blur-xl"
+                className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-3 py-2 text-sm font-normal text-white shadow-xl backdrop-blur-xl"
               >
-                <Image src={country.logo} alt="" className="h-5 w-5 rounded-full object-cover" width={20} height={20} />
-                {country.label}
+                <Image src={country.logo} alt="" className="h-5 w-5 shrink-0 rounded-full object-cover" width={20} height={20} />
+                {country.label === "United Kingdom" ? (
+                  <>
+                    <span className="xl:hidden">UK</span>
+                    <span className="hidden xl:inline">United Kingdom</span>
+                  </>
+                ) : (
+                  country.label
+                )}
               </span>
             ))}
           </motion.div>
