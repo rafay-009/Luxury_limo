@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { fontVariables } from "@/lib/fonts";
 import { CookieBanner } from "@/components/ui/CookieBanner";
@@ -9,6 +9,11 @@ import { ScrollProgressBar } from "@/components/ui/ScrollProgressBar";
 import { SITE_CONFIG } from "@/constants";
 import { generateJsonLd } from "@/lib/utils";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.meta.siteUrl),
